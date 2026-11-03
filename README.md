@@ -16,7 +16,7 @@ Meaningful changes use a feature branch, one matching Work Log entry, local `scr
 
 ## Planned development commands
 
-Rokit and the project-pinned Rojo CLI are installed and verified. `rojo build` has validated the initial mapping. `rojo serve`, the Rojo Studio plugin, and a Studio connection remain **Not verified**.
+Rokit and the project-pinned Rojo CLI are installed and verified. `rojo build` and `rojo serve` have validated the initial mapping through the Rojo Studio plugin in a local Studio test place. Gameplay runtime remains **Not verified**.
 
 ```powershell
 rokit install
