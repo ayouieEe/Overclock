@@ -72,7 +72,8 @@ Add a numbered record when a choice changes the project’s durable direction. K
 - **Decision:** Keep the repository public so GitHub Free can enforce `master` branch protection. Require pull requests and prevent administrator bypass, while requiring zero approving reviewers for this solo project.
 - **Reason:** GitHub reported that branch rules for the previous private personal repository would not be enforced. The public repository can enforce this core protection without moving the project to a paid organization.
 - **Alternatives rejected:** Unenforced private-repository rules; mandatory approving reviewers with no second maintainer; moving the repository to a paid organization now.
-- **Impact:** Repository source, history, and Actions logs are public. `Context Audit` must be added as a required status check once GitHub exposes it in the selector; it is not yet enforced as a named check.
+- **Impact:** Repository source, history, and Actions logs are public. `context-audit` is a required status check on `master`; pull requests are required, administrator bypass is disabled, and zero approving reviewers are required.
+- **Verification:** November 3, 2026 — the clean baseline Context Audit run passed, and authenticated GitHub inspection confirmed the protected-branch settings.
 
 ## D-010 — Project knowledge compounds through a Git-backed wiki
 
