@@ -8,7 +8,7 @@
 | GitHub CLI | Installed and authenticated | Creates pull requests and inspects Actions and protection through the Windows keyring. |
 | Rokit | Installed and verified | Version 1.2.0. |
 | Rojo | Installed and verified | Version 7.7.1 built the current project mapping. |
-| Roblox Studio | Installed; login pending | Version 0.745.0.7451137 is running at the login screen. No place or playtest is verified. |
+| Roblox Studio | Installed and authenticated | Version 0.745.0.7451137 synced with the local `Place1` test place. No gameplay playtest is verified. |
 | Roblox Studio MCP | Not connected | Required only for live-place inspection or edits. |
 
 ## Commands
@@ -26,4 +26,5 @@ After a fresh clone, run `powershell -ExecutionPolicy Bypass -File scripts/setup
 
 - The public `master` branch has a clean baseline and a passing `Context Audit` workflow run.
 - Branch protection requires pull requests and the `context-audit` status check, with administrator bypass disabled and zero required approving reviewers.
-- Rojo Studio plugin installation and `rojo serve` live sync remain unverified until Roblox Studio is authenticated and a place is open.
+- The official Rojo 7.7.1 plugin is installed in Studio's local Plugins folder. `rojo serve default.project.json` connected to `RobloxStudioBeta` on `localhost:34872`; a temporary source probe appeared and was removed from the live tree.
+- A final group-owned experience and Studio MCP connection remain unverified.

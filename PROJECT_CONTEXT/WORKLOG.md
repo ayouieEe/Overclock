@@ -2,6 +2,19 @@
 
 This file is append-only. Every meaningful implementation commit records changed files, verification evidence, unverified items, and one next step.
 
+## 2026-11-03 — record verified Rojo live sync
+
+- **Commit:** `docs: record verified Rojo live sync`
+- **Task:** Installed the official Rojo 7.7.1 Studio plugin through the supported manual fallback and verified a live local sync connection from the canonical checkout to the authenticated `Place1` Studio test place.
+- **Files changed:** `README.md`, `PROJECT_CONTEXT/STATE.md`, `PROJECT_CONTEXT/TOOLING.md`, `PROJECT_CONTEXT/WIKI/ARCHITECTURE.md`, `PROJECT_CONTEXT/WIKI/OPEN_QUESTIONS.md`, `PROJECT_CONTEXT/LOG.md`, `PROJECT_CONTEXT/WORKLOG.md`.
+- **Map updates:** None.
+- **Studio objects changed:** Temporary Rojo-managed folders under `ReplicatedStorage`, `ServerScriptService`, and `StarterPlayer.StarterPlayerScripts` in local `Place1`; no accepted Studio artifact.
+- **Checks performed:** `rojo serve default.project.json`; local HTTP server check; established loopback connection verified as `RobloxStudioBeta`; temporary `src/shared/LiveSyncProbe.txt` appeared in the Rojo instance tree and was removed; checkout returned clean.
+- **Ponytail review:** Not run; tooling and documentation verification with no retained gameplay code.
+- **Evidence:** Rojo 7.7.1 listened on `localhost:34872`; `RobloxStudioBeta` maintained an established connection; the source probe was detected then absent after removal.
+- **Not verified:** Group-owned experience, Studio MCP, gameplay runtime, player persistence, and game mechanics.
+- **Next step:** Define the first playable vertical slice and its numerical acceptance criteria before implementing gameplay source.
+
 ## 2026-11-03 — record verified project foundation
 
 - **Commit:** `docs: record verified project foundation`
