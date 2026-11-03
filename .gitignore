@@ -1,0 +1,16 @@
+# Generated Roblox and Rojo artifacts
+*.rbxl
+*.rbxm
+*.rbxmx
+sourcemap.json
+
+# Local tool and editor state
+.rokit/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Never commit credentials or local secrets
+.env
+.env.*
+!.env.example

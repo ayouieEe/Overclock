@@ -1,0 +1,30 @@
+{
+  "name": "OverclockSimulator",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Assets": {
+        "$path": "src/assets"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "OverclockSimulatorServer": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "OverclockSimulatorClient": {
+          "$path": "src/client"
+        }
+      }
+    }
+  }
+}
