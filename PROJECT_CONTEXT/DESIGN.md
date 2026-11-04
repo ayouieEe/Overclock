@@ -43,6 +43,10 @@ Permitted gamepass value: shorter build timers, an extra queue slot, cosmetic CP
 
 Forbidden value: exclusive functional parts, higher maximum stats, premium-only resources, exclusive event power, or paid random progression.
 
-## MVP boundary
+## Full MVP boundary
 
 The first playable build needs one desk-lab, one CPU, Compute generation and collection, capacity, the five upgrade categories, visible CPU changes, saving/loading, and a basic mobile-friendly HUD. Pets, trading, rebirths, large zones, and complex events are post-MVP.
+
+## First playable slice
+
+Before the full MVP, implement and playtest only Compute, Cores, Cache, one visible Core-driven CPU change, save/load, and one mobile HUD. The exact initial economy, player-data contract, and acceptance checks are defined in [First playable slice](WIKI/FIRST_PLAYABLE_SLICE.md). Other upgrade categories and systems remain out of this slice until its loop is verified.

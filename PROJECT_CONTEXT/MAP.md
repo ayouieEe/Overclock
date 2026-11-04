@@ -27,6 +27,7 @@
 | `PROJECT_CONTEXT/INDEX.md` | Wiki navigation and concise page summaries. | Not synced to Studio. |
 | `PROJECT_CONTEXT/SOURCES/` | Optional immutable public evidence records for future external factual claims. | Not synced to Studio. |
 | `PROJECT_CONTEXT/WIKI/` | Derived, interlinked game and project knowledge. | Not synced to Studio. |
+| `PROJECT_CONTEXT/WIKI/FIRST_PLAYABLE_SLICE.md` | Initial vertical-slice implementation contract and acceptance criteria. | Not synced to Studio. |
 | `PROJECT_CONTEXT/LOG.md` | Append-only knowledge-maintenance record. | Not synced to Studio. |
 | `place/` | Versioned Studio milestone snapshots. | A playable place snapshot when visual or structural Studio work is accepted. |
 | `scripts/check-context.ps1` | Verifies context, append-only source evidence, and appended knowledge-log entries. | Not synced to Studio. |
