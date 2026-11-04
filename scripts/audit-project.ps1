@@ -5,6 +5,7 @@ $ErrorActionPreference = 'Stop'
 
 & "$PSScriptRoot/check-context.ps1"
 & "$PSScriptRoot/lint-wiki.ps1"
+& "$PSScriptRoot/test-check-context.ps1"
 
 $diffCheck = @(git diff --check)
 if ($LASTEXITCODE -ne 0) {

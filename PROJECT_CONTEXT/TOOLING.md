@@ -28,3 +28,4 @@ After a fresh clone, run `powershell -ExecutionPolicy Bypass -File scripts/setup
 - Branch protection requires pull requests and the `context-audit` status check, with administrator bypass disabled and zero required approving reviewers.
 - The official Rojo 7.7.1 plugin is installed in Studio's local Plugins folder. `rojo serve default.project.json` connected to `RobloxStudioBeta` on `localhost:34872`; a temporary source probe appeared and was removed from the live tree.
 - A final group-owned experience and Studio MCP connection remain unverified.
+- The canonical checkout's `core.hooksPath` is `scripts/hooks`. `scripts/test-check-context.ps1` verifies that a governed change uses the newest Work Log entry, matching this repository's newest-first log order.
