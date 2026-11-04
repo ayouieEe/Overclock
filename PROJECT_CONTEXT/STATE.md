@@ -2,7 +2,7 @@
 
 - **Updated:** November 3, 2026
 - **Updated by:** Codex
-- **Milestone:** Development foundation verified — protected source workflow, knowledge system, local Rojo-to-Studio sync, and commit-enforcement regression coverage are ready; gameplay development remains pending.
+- **Milestone:** First playable slice specified — protected source workflow, knowledge system, local Rojo-to-Studio sync, and commit-enforcement regression coverage are ready; gameplay implementation remains pending.
 
 ## Working
 
@@ -23,7 +23,7 @@
 
 ## Next single recommended task
 
-Define the first playable vertical slice and its numerical acceptance criteria, then implement it through the verified Rojo workflow.
+Implement the first playable slice through the verified Rojo workflow: server-owned Compute, Cores, Cache, safe player state, and the initial mobile HUD.
 
 ## Blockers
 

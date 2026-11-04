@@ -90,3 +90,11 @@ Add a numbered record when a choice changes the project’s durable direction. K
 - **Reason:** The wiki must remain a trustworthy, compounding record rather than a collection of optional notes.
 - **Alternatives rejected:** Allowing silent source rewrites, relying on agent memory for log updates, and testing only a passing wiki.
 - **Impact:** Evidence corrections use successor records; agents run the negative test script after changing wiki-lint behavior.
+
+## D-012 — Prove the economy with a two-upgrade playable slice
+
+- **Date:** November 4, 2026
+- **Decision:** Implement and test Compute, Cores, Cache, visible Core feedback, save/load, and a mobile HUD before the remaining upgrade categories or any live-service system.
+- **Reason:** The smallest loop can validate the game promise, server authority, and persistence without locking in untested complexity.
+- **Alternatives rejected:** Building all five upgrade categories before playtesting; postponing persistence until after the economy UI exists.
+- **Impact:** The first implementation follows `WIKI/FIRST_PLAYABLE_SLICE.md`; its values are test inputs and require free-player playtest evidence before production balancing.

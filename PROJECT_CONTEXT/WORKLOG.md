@@ -2,6 +2,19 @@
 
 This file is append-only. Every meaningful implementation commit records changed files, verification evidence, unverified items, and one next step.
 
+## 2026-11-04 — docs define first playable slice
+
+- **Commit:** `docs: define first playable slice`
+- **Task:** Defined the first implementation contract: two upgrades, test economy values, server-owned player-state rules, player journey, and acceptance criteria.
+- **Files changed:** `PROJECT_CONTEXT/WIKI/FIRST_PLAYABLE_SLICE.md`, `PROJECT_CONTEXT/INDEX.md`, `PROJECT_CONTEXT/DESIGN.md`, `PROJECT_CONTEXT/WIKI/OPEN_QUESTIONS.md`, `PROJECT_CONTEXT/DECISIONS.md`, `PROJECT_CONTEXT/STATE.md`, `PROJECT_CONTEXT/MAP.md`, `PROJECT_CONTEXT/LOG.md`, `PROJECT_CONTEXT/WORKLOG.md`.
+- **Map updates:** Added the first-playable-slice specification to the project map.
+- **Studio objects changed:** None.
+- **Checks performed:** `scripts/lint-wiki.ps1`; `scripts/test-lint-wiki.ps1`; `scripts/audit-project.ps1`; all passed from the repository root.
+- **Ponytail review:** Completed; the slice contains only the minimum loop needed to validate the game promise and defers the remaining systems.
+- **Evidence:** The specification defines exact test values and measurable acceptance criteria; it does not claim any gameplay behavior is implemented.
+- **Not verified:** Gameplay source, runtime behavior, DataStore persistence, mobile usability, group-owned experience, and Studio MCP.
+- **Next step:** Implement server-owned Compute, Cores, Cache, safe data defaults, and the initial HUD through Rojo.
+
 ## 2026-11-04 — fix commit enforcement
 
 - **Commit:** `fix: enforce newest work log entry`

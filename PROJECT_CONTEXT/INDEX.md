@@ -6,6 +6,7 @@ Start here after reading `PROJECT_CONTEXT/README.md`. Use `rg "term" PROJECT_CON
 
 - [Game overview](WIKI/GAME_OVERVIEW.md) — promise, boundaries, and current evidence posture.
 - [Core loop](WIKI/CORE_LOOP.md) — the smallest repeatable player loop.
+- [First playable slice](WIKI/FIRST_PLAYABLE_SLICE.md) — implementation boundary, initial numbers, data contract, and pass/fail checks.
 - [CPU progression](WIKI/CPU_PROGRESSION.md) — CPU stats and upgrade principles.
 - [Economy](WIKI/ECONOMY.md) — Compute, capacity, and balancing questions.
 - [Mobile UX](WIKI/MOBILE_UX.md) — mobile-first clarity and first-session needs.
