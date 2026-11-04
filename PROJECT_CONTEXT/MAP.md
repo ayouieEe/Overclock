@@ -41,18 +41,30 @@
 | `scripts/hooks/commit-msg` | Confirms the Work Log commit subject matches the Git commit subject. | Not synced to Studio. |
 | `.github/workflows/context-audit.yml` | Runs the full context audit for pull requests and pushes to `master`. | Not synced to Studio. |
 
-## Planned modules
+### First playable slice modules
 
-These names are planned, not implemented. Add them here only when their purpose or destination changes.
-
-| Planned path | Purpose | Roblox destination |
+| Path | Purpose | Roblox destination |
 | --- | --- | --- |
-| `src/server/PlayerDataService.luau` | Server-authoritative player data and persistence. | `ServerScriptService.OverclockSimulatorServer.PlayerDataService` |
-| `src/server/ComputeService.luau` | Compute generation, collection, and offline accrual. | `ServerScriptService.OverclockSimulatorServer.ComputeService` |
-| `src/server/UpgradeService.luau` | Upgrade validation, costs, and timers. | `ServerScriptService.OverclockSimulatorServer.UpgradeService` |
-| `src/shared/GameConfig.luau` | Shared game constants. | `ReplicatedStorage.Shared.GameConfig` |
-| `src/shared/UpgradeConfig.luau` | Shared upgrade definitions. | `ReplicatedStorage.Shared.UpgradeConfig` |
-| `src/client/MainHUD.client.luau` | Player HUD and upgrade interaction. | `StarterPlayer.StarterPlayerScripts.OverclockSimulatorClient.MainHUD` |
+| `src/shared/GameConfig.luau` | First-slice schema, DataStore, economy, and save constants. | `ReplicatedStorage.Shared.GameConfig` |
+| `src/shared/UpgradeConfig.luau` | First-slice Core and Cache cost table. | `ReplicatedStorage.Shared.UpgradeConfig` |
+| `src/shared/ComputeRules.luau` | Pure state normalization, accrual, capacity, and purchase rules. | `ReplicatedStorage.Shared.ComputeRules` |
+| `src/server/PlayerDataService.luau` | DataStore load/save, validated player state, and snapshots. | `ServerScriptService.OverclockSimulatorServer.PlayerDataService` |
+| `src/server/ComputeService.luau` | One-second server accrual loop. | `ServerScriptService.OverclockSimulatorServer.ComputeService` |
+| `src/server/UpgradeService.luau` | Server validation boundary for Core and Cache requests. | `ServerScriptService.OverclockSimulatorServer.UpgradeService` |
+| `src/server/OverclockServer.server.luau` | Server bootstrap, remotes, saves, and temporary test world. | `ServerScriptService.OverclockSimulatorServer.OverclockServer` |
+| `src/server/FirstSliceAssertions.server.luau` | Studio-only assertions for economy rules and invalid upgrades. | `ServerScriptService.OverclockSimulatorServer.FirstSliceAssertions` |
+| `src/client/MainHUD.client.luau` | Responsive mobile hardware-panel HUD and upgrade input. | `StarterPlayer.StarterPlayerScripts.OverclockSimulatorClient.MainHUD` |
+| `src/client/DeskVisual.client.luau` | Client-only low-poly personal desk and CPU Core feedback. | `StarterPlayer.StarterPlayerScripts.OverclockSimulatorClient.DeskVisual` |
+
+### Runtime-created first-slice objects
+
+| Object | Owner | Purpose |
+| --- | --- | --- |
+| `ReplicatedStorage.OverclockRemotes.GetState` | `OverclockServer` | Initial server-approved player snapshot. |
+| `ReplicatedStorage.OverclockRemotes.RequestUpgrade` | `OverclockServer` | Client request for `Cores` or `Cache`; server validates it. |
+| `ReplicatedStorage.OverclockRemotes.StateChanged` | `OverclockServer` | Server-to-client snapshot updates. |
+| `Workspace.OverclockTestWorld` | `OverclockServer` | Temporary floor and spawn for the personal test place. |
+| `Workspace.OverclockLocalDesk` | `DeskVisual` on each client | Visual-only personal desk and CPU; not authoritative or shared. |
 
 ## Studio artifact policy
 

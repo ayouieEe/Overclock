@@ -2,6 +2,13 @@
 
 Append only. Use this for source ingestion, durable query results, and wiki lint/audit outcomes; implementation commits belong in `WORKLOG.md`.
 
+## [2026-11-04] query | Recorded first playable slice Studio evidence
+
+- **Operation:** Recorded the first Rojo-connected Studio playtest results without promoting unrun checks to verified behavior.
+- **Pages:** `WIKI/PLAYTEST_FINDINGS.md` and `STATE.md`.
+- **Result:** Accrual, Cache, Core, local CPU feedback, and development DataStore stop/rejoin persistence passed; phone viewport, live invalid-remote abuse, and runtime offline-boundary execution remain open.
+- **Open questions:** The remaining first-slice acceptance checks and final group-owned experience.
+
 ## [2026-11-04] query | Defined the first playable slice
 
 - **Operation:** Converted the open first-slice economy, player-state, and test questions into one implementation contract.

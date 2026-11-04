@@ -2,7 +2,7 @@
 
 - **Updated:** November 3, 2026
 - **Updated by:** Codex
-- **Milestone:** First playable slice specified — protected source workflow, knowledge system, local Rojo-to-Studio sync, and commit-enforcement regression coverage are ready; gameplay implementation remains pending.
+- **Milestone:** First playable slice verified in a personal Studio test place — core progression and development DataStore persistence work; phone viewport and adversarial remote testing remain open.
 
 ## Working
 
@@ -14,16 +14,19 @@
 - Roblox Studio 0.745.0.7451137 is authenticated with a local `Place1` test place open.
 - The official Rojo 7.7.1 plugin is installed manually, and `rojo serve default.project.json` is connected to Roblox Studio on `localhost:34872`.
 - The canonical checkout has versioned Git hooks activated, and the staged validator is regression-tested against newest-first Work Log entries.
+- The first-playable-slice source exists: pure economy rules, server data/Compute/upgrade services, three remotes, a local desk visual, and a responsive hardware-panel HUD.
+- In `ershal_panget's Place: 11042026_1`, Rojo connected to the local server and a Studio playtest verified accrual, Cache and Core upgrades, visual Core feedback, and a stopped/rejoined DataStore restore.
 
 ## Not working or not yet built
 
-- No published/group-owned Studio experience, Studio MCP session, or Luau gameplay code exists.
+- No published/group-owned Studio experience or Studio MCP session exists.
 - A temporary local `Place1` is the verified sync target; it is not the intended final group-owned release place.
 - No current local Rojo/Studio session is running; the prior live-sync test remains recorded evidence rather than a persistent service.
+- Phone-sized viewport behavior, malicious remote-request behavior, and runtime verification of the four-hour offline cap are not yet verified.
 
 ## Next single recommended task
 
-Implement the first playable slice through the verified Rojo workflow: server-owned Compute, Cores, Cache, safe player state, and the initial mobile HUD.
+Run the remaining first-slice acceptance checks: phone-sized viewport, intentionally invalid client requests, and the four-hour offline-accrual boundary.
 
 ## Blockers
 
