@@ -47,7 +47,7 @@ function Get-LatestWorkLogEntry {
     if ($entries.Count -eq 0) {
         throw 'WORKLOG.md has no dated entries.'
     }
-    return $entries[$entries.Count - 1].Value
+    return $entries[0].Value
 }
 
 function Get-WorkLogFieldValue {
@@ -69,7 +69,7 @@ function Get-LatestKnowledgeLogEntry {
     if ($entries.Count -eq 0) {
         throw 'LOG.md needs a parseable entry: ## [YYYY-MM-DD] operation | title'
     }
-    return $entries[$entries.Count - 1].Value
+    return $entries[0].Value
 }
 
 if ($Staged) {

@@ -2,6 +2,19 @@
 
 This file is append-only. Every meaningful implementation commit records changed files, verification evidence, unverified items, and one next step.
 
+## 2026-11-04 — fix commit enforcement
+
+- **Commit:** `fix: enforce newest work log entry`
+- **Task:** Corrected the staged commit validator to select newest-first Work Log and knowledge-log entries, added isolated regression coverage, and activated hooks in the canonical checkout.
+- **Files changed:** `scripts/check-context.ps1`, `scripts/test-check-context.ps1`, `scripts/audit-project.ps1`, `PROJECT_CONTEXT/MAP.md`, `PROJECT_CONTEXT/STATE.md`, `PROJECT_CONTEXT/TOOLING.md`, `PROJECT_CONTEXT/WORKLOG.md`.
+- **Map updates:** Added `scripts/test-check-context.ps1` as the staged-validator regression test.
+- **Studio objects changed:** None.
+- **Checks performed:** `scripts/test-check-context.ps1`; `scripts/test-lint-wiki.ps1`; `scripts/audit-wiki.ps1`; `scripts/audit-project.ps1`; Git hook-path verification; GitHub Context Audit after pull request.
+- **Ponytail review:** Completed; smallest repair is selecting the first dated entry and testing it in an isolated clone.
+- **Evidence:** The regression fixture stages a mapped source file and a newest-first Work Log entry with a matching commit subject; validation passes. The canonical `core.hooksPath` is `scripts/hooks`.
+- **Not verified:** Group-owned experience, Studio MCP, gameplay runtime, player persistence, and game mechanics.
+- **Next step:** Define and implement the first playable vertical slice through the verified workflow.
+
 ## 2026-11-03 — record verified Rojo live sync
 
 - **Commit:** `docs: record verified Rojo live sync`

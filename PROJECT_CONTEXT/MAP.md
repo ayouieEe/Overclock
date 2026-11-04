@@ -35,6 +35,7 @@
 | `scripts/lint-wiki.ps1` | Deterministically checks wiki structure and references. | Not synced to Studio. |
 | `scripts/audit-wiki.ps1` | Produces a read-only wiki health-review report. | Not synced to Studio. |
 | `scripts/test-lint-wiki.ps1` | Runs isolated negative tests for the wiki linter. | Not synced to Studio. |
+| `scripts/test-check-context.ps1` | Runs an isolated newest-Work-Log regression test for the staged commit validator. | Not synced to Studio. |
 | `scripts/hooks/pre-commit` | Runs the staged context check before commits. | Not synced to Studio. |
 | `scripts/hooks/commit-msg` | Confirms the Work Log commit subject matches the Git commit subject. | Not synced to Studio. |
 | `.github/workflows/context-audit.yml` | Runs the full context audit for pull requests and pushes to `master`. | Not synced to Studio. |
