@@ -2,6 +2,19 @@
 
 This file is append-only. Every meaningful implementation commit records changed files, verification evidence, unverified items, and one next step.
 
+## 2026-11-04 — feat implement first playable slice
+
+- **Commit:** `feat: implement first playable slice`
+- **Task:** Added the minimal authoritative Overclock loop: automatic Compute, Core and Cache upgrades, development-only DataStore persistence, three state remotes, a mobile HUD, local CPU visual feedback, and Studio-only economy assertions.
+- **Files changed:** `src/shared/GameConfig.luau`, `src/shared/UpgradeConfig.luau`, `src/shared/ComputeRules.luau`, `src/server/PlayerDataService.luau`, `src/server/ComputeService.luau`, `src/server/UpgradeService.luau`, `src/server/OverclockServer.server.luau`, `src/server/FirstSliceAssertions.server.luau`, `src/client/MainHUD.client.luau`, `src/client/DeskVisual.client.luau`, `PROJECT_CONTEXT/MAP.md`, `PROJECT_CONTEXT/STATE.md`, `PROJECT_CONTEXT/WIKI/PLAYTEST_FINDINGS.md`, `PROJECT_CONTEXT/LOG.md`, `PROJECT_CONTEXT/WORKLOG.md`.
+- **Map updates:** Added all first-slice source paths and each runtime-created remote/world object.
+- **Studio objects changed:** Runtime-created `ReplicatedStorage.OverclockRemotes`, `Workspace.OverclockTestWorld`, and client-local `Workspace.OverclockLocalDesk`; no accepted Studio-only artifact.
+- **Checks performed:** `rojo build default.project.json`; `scripts/audit-project.ps1`; Rojo 7.7.1 live sync to `ershal_panget's Place: 11042026_1`; Studio API Services enabled; local Studio playtest for accrual, Cache, Core, visual CPU feedback, and stop/rejoin persistence.
+- **Ponytail review:** Completed; source remains limited to the two-upgrade loop, three remotes, one local visual, and required persistence/error handling.
+- **Evidence:** Studio showed Cache changing `26 / 50` to `17 / 100`, Core changing `25 / 100` at `1 Compute/s` to `10 / 100` at `2 Compute/s`, two cyan CPU modules after the Core upgrade, and restored level-2 state with a connected development DataStore after stop/rejoin.
+- **Not verified:** Phone-sized viewport, live malicious/invalid remote abuse, and runtime execution/output evidence for the four-hour offline assertion.
+- **Next step:** Run the three remaining acceptance checks, then adjust only defects they expose before expanding the game.
+
 ## 2026-11-04 — docs define first playable slice
 
 - **Commit:** `docs: define first playable slice`
